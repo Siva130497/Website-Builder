@@ -1,0 +1,82 @@
+{
+  "name": "Web-Builder",
+  "version": "0.1",
+  "private": true,
+  "author": {
+    "name": "Vithu"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "lint:fix": "eslint src --fix && npm run format",
+    "lint:strict": "eslint --max-warnings=0 src",
+    "typecheck": "tsc --noEmit --incremental false",
+    "test:watch": "jest --watch",
+    "test": "jest",
+    "format": "prettier -w .",
+    "format:check": "prettier -c .",
+    "postbuild": "next-sitemap --config next-sitemap.config.js",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@craftjs/core": "^0.2.0-beta.8",
+    "@craftjs/layers": "^0.2.0-beta.8",
+    "@heroicons/react": "^1.0.6",
+    "@vercel/analytics": "^0.1.11",
+    "next": "^13.1.6",
+    "react": "^18.2.0",
+    "react-color": "^2.19.3",
+    "react-contenteditable": "^3.3.7",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0",
+    "rsuite": "^5.28.2",
+    "styled-components": "^5.3.9"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.0",
+    "@commitlint/cli": "^16.3.0",
+    "@commitlint/config-conventional": "^16.2.4",
+    "@fullhuman/postcss-purgecss": "^5.0.0",
+    "@svgr/webpack": "^6.5.1",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@types/node": "^18.14.0",
+    "@types/react": "^18.0.27",
+    "@types/react-color": "^3.0.6",
+    "@types/styled-components": "^5.1.26",
+    "@typescript-eslint/eslint-plugin": "^5.50.0",
+    "@typescript-eslint/parser": "^5.50.0",
+    "autoprefixer": "^10.4.13",
+    "babel-plugin-inline-react-svg": "^2.0.1",
+    "eslint": "^8.33.0",
+    "eslint-config-next": "^13.1.6",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "husky": "^7.0.4",
+    "jest": "^27.5.1",
+    "lint-staged": "^12.5.0",
+    "next-router-mock": "^0.7.5",
+    "next-sitemap": "^2.5.28",
+    "postcss": "^8.4.21",
+    "postcss-import": "^15.1.0",
+    "postcss-preset-env": "^8.0.1",
+    "prettier": "^2.8.3",
+    "typescript": "^4.9.5"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx}": [
+      "npm run lint:strict",
+      "prettier -w"
+    ],
+    "**/*.{json,css,scss,md,webmanifest}": [
+      "prettier -w"
+    ]
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git"
+  }
+}

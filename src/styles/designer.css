@@ -1,0 +1,316 @@
+body {
+  overflow: hidden;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.container-p {
+  padding: 18px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+.items-center {
+  align-items: center;
+}
+
+.items-stretch {
+  align-items: stretch;
+}
+
+.pointer-grab {
+  cursor: grab;
+}
+
+.pointer-cursor {
+  cursor: pointer;
+}
+.pointer-move {
+  cursor: move;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.m-0 {
+  margin: 0px;
+}
+
+.p-0 {
+  padding: 0px;
+}
+
+.p-15 {
+  padding: 15px;
+}
+
+.px-15 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.py-5 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.py-10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.px-30 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.my-10 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.mx-10 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.my-5 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.bg-darkblue {
+  background: #00008b;
+}
+
+.color-darkblue {
+  color: #00008b;
+}
+
+.color-gray {
+  color: #808080;
+}
+
+.hover-bg-darkblue:hover {
+  background: #00008b;
+}
+
+.hover-color-darkblue:hover {
+  color: #00008b;
+}
+
+/* Designer */
+
+.designer-bg-pattern {
+  background-color: #2d3540;
+  background-image: linear-gradient(#515151 0.9px, transparent 0.9px),
+    linear-gradient(to right, #515151 0.9px, #2d3540 0.9px);
+  background-size: 18px 18px;
+}
+
+.shadow-paper {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.bg-props-box {
+  background: #292c33;
+}
+
+.component-selected {
+  position: relative;
+}
+
+.component-selected:after {
+  content: ' ';
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-width: 1px;
+  border-style: dashed;
+  border-color: #00008b;
+}
+
+.indicator-container {
+  height: 30px;
+  margin-top: -29px;
+  font-size: 12px;
+  line-height: 12px;
+  position: absolute;
+}
+
+.indicator-component-name {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.indicator-container-icon {
+  fill: white;
+  font-size: 14px;
+}
+
+.indicator-container-icon:hover {
+  fill: rgba(255, 255, 255, 0.7);
+}
+
+.components-layers {
+  max-height: 200px;
+  overflow: auto;
+}
+.components-layers .craft-layer-node.ROOT {
+  overflow: auto;
+}
+.components-layers .craft-layer-node.ROOT * {
+  background: var(--rs-gray-900);
+}
+
+.indicator-actions-btn-group {
+  border: 1px solid #00008b;
+  border-radius: 7px;
+}
+
+.top-bar {
+  height: 56px;
+}
+
+.empty-container-bg {
+  background-color: #fcfcfc;
+  background-size: 10px 10px;
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.11) 0,
+    rgba(0, 0, 0, 0.11) 1px,
+    #fcfcfc 0,
+    #fcfcfc 50%
+  );
+}
+
+.empty-container-size {
+  min-height: 50px;
+  height: 100%;
+  width: 100%;
+  color: #808080;
+}
+
+.blue-overlap-shadow {
+  box-shadow: #00008b66 -5px 5px, #00008b4d -10px 10px, #00008b33 -15px 15px,
+    #00008b1a -20px 20px, #00008b0d -25px 25px;
+}
+
+.bg-controls-title {
+  background: #5c6066;
+}
+
+.controls-title {
+  user-select: none;
+}
+
+.logo-shadow {
+  filter: drop-shadow(0px 0px 4px #fff);
+}
+
+.fancy-grad {
+  background-image: linear-gradient(
+    to right,
+    #34e89e 0%,
+    #0f3443 51%,
+    #34e89e 100%
+  );
+  padding: 4px 15px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.fancy-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #34e89e 0%,
+    #0f3443 51%,
+    #34e89e 100%
+  );
+  margin: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu-button {
+  font-size: 30px;
+  background: #0f131a;
+  width: 50px;
+  height: 50px;
+  rotate: 45deg;
+  border-radius: 0px;
+  color: #fff;
+}
+
+.menu-button:hover {
+  background-color: #3c3f43;
+}
